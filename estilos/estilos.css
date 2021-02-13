@@ -89,11 +89,11 @@ html{
 	  top:1.6em;
     right: 3%;*/
    
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #EEAD33;
     border: 1px solid white;
     /*display: block;*/
-    padding: 4px 9px;
+    padding: 4px 8px;
     border-radius: 5px;
     cursor: pointer;
   }  
@@ -438,10 +438,10 @@ color: #EEAD33;
   margin-bottom: 30px;
 }
 .footer-social a i{
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   color: white;
-  font-size:28px;
+  font-size:25px;
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
