@@ -1,0 +1,348 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+    font-family: "Raleway"; 
+    src: url(fonts/Raleway.ttf);
+  }
+body{
+	font-family: Raleway;
+}
+html, body{
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+}
+.fa-chevron-up{
+	font-size: 1.5em;
+	color: white;
+	padding: 5px 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 23px;
+	left:85%;
+	background: #6abbc2;
+  }
+  .fa-chevron-up:hover{
+	background: #5a9fa5;
+  }
+  [id]{
+	scroll-margin-top: 25ex;
+  }
+main{
+	margin-top: 225px;
+	max-width: 1000px;
+}
+.header{
+	position: relative;
+	position: fixed;
+	width: 100%;
+	max-width: 1250px;
+	height: 200px;
+	overflow: hidden;
+}
+.uno{
+	width: 0;
+	height:0;
+	border-top: 200px solid #56b85c;
+	border-right: 1000px solid transparent;
+	position: absolute;
+}
+.dos{
+	width:0 ;
+	height:0;
+	border-top: 320px solid #6abbc2b0;
+	border-left: 1500px solid transparent;
+	position: absolute;
+	left: -470px;
+}
+.foto .foto_perfil{
+	/*width: 120px;*/
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.foto{
+	position: absolute;
+	border-radius: 50%;
+	padding: 3px;
+	border: solid white 1px;
+	width: 120px;
+	height: 120px;
+	top: 30px;
+	left: 15px;
+}
+.contacto_barra{
+	display: none;
+}
+.menu{
+	position: fixed;
+	top:0px;
+	font-size: 0.8em;
+    color: white;
+    background: #566859c7;
+    width: 65%;
+	height: 100%;
+    margin: 0;
+    transition: all 0.5s;
+	text-align: center;
+	z-index: 2;
+	right: -100%;
+	transition: all 0.5s;
+}
+.open{
+	opacity: 0;
+}
+.mostrar{
+	right: 0;
+}
+.menu div{
+	padding: 15px;
+}
+.menu div:hover{
+	background:#566859 ;
+}
+.menu div a{
+	text-decoration: none;
+	color: white;
+}
+.item_menu{
+	margin-top: 70px;
+}
+.nombre{
+	position: absolute;
+	top: 30px;
+	left: 45%;
+	color: white;
+}
+.ocupacion{
+	font-size: 12px;
+}
+.icon_menu{
+	position:fixed;
+	top: 30px;
+	right: 25px;
+	color:white;
+	font-size: 20px;
+	cursor: pointer;
+	z-index: 4;
+	transition: all 0.5s;
+}
+.icon_menu:hover{
+	color: #6c6e6c ;
+}
+.icon_close{
+	position: absolute;
+	top: 30px;
+	right: 19px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	z-index: 3;
+}
+.social{
+	position: absolute;
+	top: 70px;
+	right: 18px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.social div{
+	margin-bottom: 7px;
+}
+.social a{
+	text-decoration: none;
+	color: white;
+}
+.social a:hover{
+	color: #6c6e6c ;
+}
+.section{
+	color: rgb(41, 39, 39);
+}
+.section h4{
+	color:#3c838a ;
+}
+.contenido_section{
+	position: relative;
+}
+.titulo_section{
+	position: absolute;
+	left: 70px;
+	top: 13px;
+	z-index: -5;
+}
+.icono_section{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #3c838a;
+	margin-left: 20px;
+	padding: 10px;
+	z-index: -5;
+}
+.icono_section i{
+	font-size:20px;
+	color: white;
+}
+.descripcion_section{
+	border-left: solid gray 1px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 5%;
+	margin-left: 38px;
+	z-index: -5;
+	position: relative;
+}
+span{
+	font-weight: bold;
+}
+/*footer{
+	width:0;
+	height:0;
+	border-bottom: 100px solid #56b85c;
+	border-right: 1000px solid transparent;
+	
+}*/
+.footer{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #6abbc2b0;
+	padding: 20px 0 20px 0;
+	max-width: 1255px;
+}
+.p{
+	
+	font-size: 11px;
+	color:black;
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+}
+.slider {
+	overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: cambio 6s infinite alternate;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+.slider img {
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    47% {margin-left: 0;}
+
+    50% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+
+}
+@media screen and (min-width: 500px){
+	.fa-chevron-up{
+		left: 90%;
+	}
+}
+@media screen and (min-width: 1024px){
+	.fa-chevron-up{
+		left: 95%;
+	}
+	.icon_menu{
+		display: none;
+	}
+	.menu{
+		display: none;
+	}
+	.contacto_barra{
+		position:fixed;
+		width: 180px;
+		height: 100%;
+		display:initial;
+		background: #56b85c;
+		z-index: -7;
+		color: rgb(252, 250, 250);
+		text-align: center;
+		font-size: 0.9em;
+		padding: 0 20px 0 20px;
+	}
+	.contacto_barra div{
+		margin-bottom: 30px;
+	}
+	.contacto_barra div a{
+		text-decoration: none;
+		color: rgb(252, 250, 250);
+	}
+	.contacto_barra div a:hover{
+		color: rgb(54, 39, 39);
+	}
+	.cedula{
+		margin-top: 290px;
+	}
+	.uno{
+		width: 0;
+		height:0;
+		border-top: 200px solid #56b85c;
+		border-right: 1500px solid transparent;
+		position: absolute;
+	}
+	.dos{
+		width:0 ;
+		height:0;
+		border-top: 300px solid #6abbc2b0;
+		border-left: 2000px solid transparent;
+		position: absolute;
+		left: -470px;
+	}
+	.header{
+		
+		height: 200px;
+		
+	}
+	.foto{
+		
+		padding: 5px;
+		
+		width: 160px;
+		height: 160px;
+		top: 25px;
+		left: 20px;
+	}
+	.foto .foto_perfil{
+		width: 160px;
+		height: 160px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+	main{
+		margin-left: 255px;
+	}
+	.datos_personales{
+		display: none;
+	}
+	
+	
+}
+@media screen and (min-width: 1267px){
+	.fa-chevron-up{
+		left: 1190px;
+	}
+	body{
+		margin: auto;
+	}
+}
+@media screen and (min-width: 1350px){
+	.fa-chevron-up{
+		left: 1270px;
+	}
+}
