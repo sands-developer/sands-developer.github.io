@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unirse al Grupo de WhatsApp</title>
+  <meta name="description" content="Botón simple para unirse a un grupo de WhatsApp" />
+  <style>
+    :root {
+      --bg: #0f172a;         /* slate-900 */
+      --card: #111827;       /* gray-900 */
+      --text: #e5e7eb;       /* gray-200 */
+      --muted: #94a3b8;      /* slate-400 */
+      --accent: #25d366;     /* WhatsApp green */
+      --accent-dark: #1aaa52;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(1200px 800px at 50% -10%, #1f2937 0, var(--bg) 45%);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    .card {
+      width: min(560px, 92vw);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+      backdrop-filter: blur(6px);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.25rem, 1.1rem + 1.2vw, 1.8rem);
+      letter-spacing: 0.2px;
+    }
+    p { margin: 0 0 18px; color: var(--muted); }
+
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      will-change: transform;
+    }
+    .wa-btn:focus { outline: none; box-shadow: 0 0 0 4px rgba(37,211,102,.25), 0 8px 20px rgba(37, 211, 102, 0.35); }
+    .wa-btn:hover { transform: translateY(-1px); background: var(--accent-dark); }
+    .wa-btn:active { transform: translateY(0); }
+
+    .wa-icon { width: 22px; height: 22px; display: inline-block; }
+
+    .subcopy { margin-top: 14px; font-size: 0.9rem; color: var(--muted); }
+    .subcopy code { color: #cbd5e1; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Únete al grupo de WhatsApp</h1>
+    <p>Haz clic en el botón para ir al grupo y solicitar unirte.</p>
+
+    <a class="wa-btn" href="https://chat.whatsapp.com/HwOLVUQZxBbHo2t74pyZVz" target="_blank" rel="noopener noreferrer" aria-label="Unirse al grupo de WhatsApp">
+      <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M12.04 2C6.59 2 2.17 6.42 2.17 11.87c0 2.09.58 3.98 1.59 5.6L2 22l4.66-1.22a9.77 9.77 0 0 0 5.38 1.58h.01c5.45 0 9.87-4.42 9.87-9.87C21.92 6.42 17.49 2 12.04 2m5.78 13.93c-.24.69-1.23 1.26-1.9 1.42c-.51.11-1.17.2-3.39-.73c-2.84-1.17-4.67-4.04-4.81-4.23c-.14-.2-1.15-1.53-1.15-2.92c0-1.39.73-2.07 1-2.35c.24-.25.64-.36 1.02-.36c.12 0 .22 0 .32.01c.28.01.42.03.6.46c.23.56.8 1.95.86 2.09c.07.14.12.31.02.5c-.09.2-.14.31-.27.47c-.13.16-.29.37-.41.49c-.13.13-.27.27-.12.52c.14.24.62 1.02 1.33 1.65c.92.82 1.7 1.08 1.95 1.2c.24.12.39.1.53-.06c.14-.17.62-.72.79-.97c.17-.24.34-.2.57-.12c.24.08 1.5.71 1.76.84c.26.13.43.2.49.31c.06.13.06.73-.18 1.42z"/>
+      </svg>
+      Unirme al grupo
+    </a>
+
+    <p class="subcopy">Puedes copiar el enlace si lo prefieres: <code>https://chat.whatsapp.com/HwOLVUQZxBbHo2t74pyZVz</code></p>
+  </main>
+</body>
+</html>
